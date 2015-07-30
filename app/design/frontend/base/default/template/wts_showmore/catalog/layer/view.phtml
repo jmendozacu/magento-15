@@ -1,0 +1,82 @@
+<?php
+/**
+ * Source: http://magento-zend.blogspot.com/2011/12/adding-show-hide-more-functionality-in.html
+ */
+$displaySize = 1;
+$hiddenFilters = array();
+?>
+
+<?php if ($this->canShowBlock()): ?>
+    <?php if (!$this->getRequest()->isAjax()): ?>
+        <div id="layered-navigation wts-showmore-view">
+        <?php endif; ?>
+        <div class="block block-layered-nav<?php if (!$this->getLayer()->getState()->getFilters()): ?> block-layered-nav--no-filters<?php endif; ?>">
+            <div class="block-title">
+                <strong><span><?php echo $this->__('Shop By') ?></span></strong>
+            </div>
+            <div class="block-content toggle-content">
+                <?php echo $this->getStateHtml() ?>
+                <?php if ($this->getLayer()->getState()->getFilters()): ?>
+                    <div class="actions"><a href="<?php echo $this->getClearUrl() ?>"><?php echo $this->__('Clear All') ?></a></div>
+                <?php endif; ?>
+                <?php if ($this->canShowOptions()): ?>
+                    <p class="block-subtitle block-subtitle--filter"><?php echo $this->__('Filter') ?></p>
+                    <dl id="narrow-by-list">
+                        <?php $_filters = $this->getFilters() ?>
+                        <?php foreach ($_filters as $_filter): ?>
+                            <?php
+                            if ($_filter->getItemsCount() > $displaySize)
+                                $hiddenFilters[] = strtolower($_filter->getName());
+                            ?>
+                            <?php if ($_filter->getItemsCount()): ?>
+                                <dt><?php echo $this->__($_filter->getName()) ?></dt>
+                                <dd><?php echo $_filter->getHtml() ?></dd>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    </dl>
+                    <script type="text/javascript">decorateDataList('narrow-by-list')</script>
+                <?php endif; ?>
+            </div>
+        </div>
+        <?php if (!$this->getRequest()->isAjax()): ?>
+        </div>
+    <?php endif; ?>
+<?php endif; ?>
+
+<script>
+    Event.observe(window, 'load',
+            function () {
+<?php
+foreach ($hiddenFilters as $v) {
+    echo "$('cont-" . $v . "').hide();";
+}
+?>
+            }
+    );
+
+    // Register event 'click' and associated call back.
+    Event.observe(document, 'click', respondToClick);
+
+    // Callback function to handle the event.
+    function respondToClick(event) {
+        var element = event.element();
+        //------
+<?php
+foreach ($hiddenFilters as $p) {
+    echo "if(element.up('div').id=='more-" . $p . "')
+            {
+            $('cont-" . $p . "').show();
+            $('more-" . $p . "').hide();
+            }
+            if(element.up('div').id=='less-" . $p . "')
+            {
+            $('cont-" . $p . "').hide();
+            $('more-" . $p . "').show();
+            }";
+}
+?>
+
+        //-----
+
+    }
+</script>

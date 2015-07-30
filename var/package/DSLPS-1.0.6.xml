@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>DSLPS</name>
+    <version>1.0.6</version>
+    <stability>stable</stability>
+    <license>GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Filter price using slider</summary>
+    <description>This extension is used to filter price on product detail page using slider.</description>
+    <notes>Third release</notes>
+    <authors><author><name>Daffodil Software</name><user>daffodilsw</user><email>ashish.mittal@daffodilsw.com</email></author></authors>
+    <date>2013-01-30</date>
+    <time>12:44:13</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Slider_Slider.xml" hash="a27af6c7f740e3eb57e300c3b7ea3b84"/></dir></target><target name="magelocal"><dir name="Slider"><dir name="Slider"><dir name="Block"><file name="Mainslider.php" hash="57790cc20361a23deb1880e2ba2f6b5a"/><file name="Pager.php" hash="ce62dc3a95722cc6d99dc142cb42e0b2"/><dir name="Product"><dir name="List"><dir name="Toolbar"><file name="Pager.php" hash="36234920c974d768ca9ca74893496e21"/></dir></dir></dir><file name="Slider.php" hash="776fa4473f19e33d79d6142319371088"/><file name="Tool.php" hash="24769cabf15f831376c6d7f21b4fd7a3"/></dir><dir name="Model"><file name="Slider.php" hash="fff62a0f9ee7a7c9317ba8ba00bf4cdf"/></dir><dir name="controllers"><file name="SliderController.php" hash="508b2df98082fdc0f7219aac59fb0221"/></dir><dir name="etc"><file name="config.xml" hash="78614286991d94db46df494d82446e14"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="slider"><file name="pager.phtml" hash="bd9ed0a4bf6fc58f911b2a57ee461085"/><file name="slider.phtml" hash="d085ab6ac9830939c5fa38413cfa9f64"/><file name="slider1.phtml" hash="51285b8e397fa73bd8b258a1ccc4f2fd"/><file name="slider2.phtml" hash="9253f615561240eb88d4df8ba140948c"/><file name="slider3.phtml" hash="daf33080383f1d44f3a5022556d544c1"/><file name="slider4.phtml" hash="a01618fc9b714c0e530f525e1bd6b123"/><file name="view.phtml" hash="71c1d44cf55467ecf46e6d69d434b057"/><file name="view.phtml~" hash="11741a5f3a7a672c41b1ac6e98496c77"/></dir></dir><dir name="layout"><file name="slider.xml" hash="f68197816ebec5948f83616331ece1af"/></dir></dir></dir></dir></target><target name="mage"><dir name="js"><dir name="slider"><file name="jquery-ui-1.8rc1.custom.css" hash="52514b3d1d3d29c7302739fd69d8d987"/></dir><dir name="varien"><file name="jquery-1.4.1.min.js" hash="9eb33df93b21325142088527103882d2"/><file name="jquery-ui-1.8rc1.custom.min.js" hash="ee62db43b991411f7e64c31d19c850f6"/></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="default"><dir name="default"><dir name="images"><dir name="slider"><file name="loading.gif" hash="0cfc308d500d051be5445d239282702e"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

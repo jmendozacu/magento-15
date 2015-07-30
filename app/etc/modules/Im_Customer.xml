@@ -1,0 +1,8 @@
+<config>
+  <modules>
+    <Im_Customer>
+      <active>true</active>
+      <codePool>community</codePool>
+    </Im_Customer>
+  </modules>
+</config>

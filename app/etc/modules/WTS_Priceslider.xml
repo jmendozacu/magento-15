@@ -1,0 +1,8 @@
+<config>
+  <modules>
+    <WTS_Priceslider>
+      <active>true</active>
+      <codePool>community</codePool>
+    </WTS_Priceslider>
+  </modules>
+</config>

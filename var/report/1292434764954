@@ -1,0 +1,12 @@
+a:4:{i:0;s:517:"SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`magento`.`giftreg_entity`, CONSTRAINT `FK_GIFTREG_ENTITY_CUSTOMER_ID_CUSTOMER_ENTITY_ENTITY_ID` FOREIGN KEY (`customer_id`) REFERENCES `customer_entity` (`entity_id`) ON DELETE CASCADE ON UPD), query was: INSERT INTO `giftreg_entity` (`type_id`, `website_id`, `event_name`, `event_date`, `event_country`, `event_location`, `created_at`) VALUES (?, ?, ?, '2015-03-03', ?, ?, '2015-02-26 18:00:00')";i:1;s:1167:"#0 /var/www/magento/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#1 /var/www/magento/app/code/core/Zend/Db/Statement.php(291): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#2 /var/www/magento/lib/Zend/Db/Adapter/Abstract.php(480): Zend_Db_Statement->execute(Array)
+#3 /var/www/magento/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('INSERT INTO `gi...', Array)
+#4 /var/www/magento/lib/Varien/Db/Adapter/Pdo/Mysql.php(428): Zend_Db_Adapter_Pdo_Abstract->query('INSERT INTO `gi...', Array)
+#5 /var/www/magento/lib/Zend/Db/Adapter/Abstract.php(576): Varien_Db_Adapter_Pdo_Mysql->query('INSERT INTO `gi...', Array)
+#6 /var/www/magento/app/code/core/Mage/Core/Model/Resource/Db/Abstract.php(453): Zend_Db_Adapter_Abstract->insert('giftreg_entity', Array)
+#7 /var/www/magento/app/code/core/Mage/Core/Model/Abstract.php(318): Mage_Core_Model_Resource_Db_Abstract->save(Object(Im_Giftregistry_Model_Entity))
+#8 /var/www/magento/shell/imc.php(97) : eval()'d code(1): Mage_Core_Model_Abstract->save()
+#9 /var/www/magento/shell/imc.php(97): eval()
+#10 /var/www/magento/shell/imc.php(28): IMC->read()
+#11 {main}";s:11:"script_name";s:26:"/var/www/magento/index.php";s:4:"skin";s:7:"default";}

@@ -1,0 +1,42 @@
+<layout version="1.0">
+    <im_giftregistry_index_index>
+        <reference name="content">
+            <block name="giftregistry.list" type="im_giftregistry/list"
+                   template="giftregistry/list.phtml" as="giftregistry_list"/>
+        </reference>
+    </im_giftregistry_index_index>
+    <im_giftregistry_index_new>
+        <reference name="content">
+            <block name="giftregistry.new" type="core/template" 
+                   template="giftregistry/new.phtml" as="giftregistry_new"/>
+        </reference>
+    </im_giftregistry_index_new>
+    <im_giftregistry_index_edit>
+        <reference name="content">
+            <block name="giftregistry.edit" type="core/template" 
+                   template="giftregistry/edit.phtml" as="giftregistry_edit"/>
+        </reference>
+    </im_giftregistry_index_edit>
+    
+    <im_giftregistry_view_view>
+        <reference name="content">
+            <block name="giftregistry.view" type="core/template" 
+                   template="giftregistry/view.phtml" as="giftregistry_view"/>
+        </reference>
+    </im_giftregistry_view_view>
+    
+    <im_giftregistry_search_index>
+        
+    </im_giftregistry_search_index>
+    <im_giftregistry_search_results>
+        
+    </im_giftregistry_search_results>
+    
+    <catalog_product_view translate="label">
+        <reference name="content">
+            <reference name="product.info">
+                <block type="im_giftregistry/add" name="registry.add" as="registry_add" template="im/add_to_registry.phtml" />
+            </reference>
+        </reference>
+    </catalog_product_view>
+</layout>

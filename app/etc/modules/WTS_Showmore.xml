@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <WTS_Showmore>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Catalin_SEO/>
+            </depends>
+        </WTS_Showmore>
+    </modules>
+</config>

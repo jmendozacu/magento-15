@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <WTS_Showmore>
+            <version>0.1.0</version>
+        </WTS_Showmore>
+    </modules>
+    <blocks>
+        <catalog>
+            <rewrite>
+                <layer_filter_attribute>WTS_Showmore_Block_Catalog_Layer_Filter_Attribute</layer_filter_attribute>
+            </rewrite>
+        </catalog>
+        <wts_showmore>
+            <class>WTS_Showmore_Block</class>
+        </wts_showmore>
+    </blocks>
+    <helpers>
+        <wts_showmore>
+            <class>WTS_Showmore_Helper</class>
+        </wts_showmore>
+    </helpers>
+    <frontend>
+        <routers>
+            <wts_showmore>
+                <use>standard</use>
+                <args>
+                    <module>WTS_Showmore</module>
+                    <frontName>wts_showmore</frontName>
+                </args>
+            </wts_showmore>
+        </routers>
+        <layout>
+            <updates>
+                <wts_showmore>
+                    <file>wts_showmore.xml</file>
+                </wts_showmore>
+            </updates>
+        </layout>
+    </frontend>
+</config>

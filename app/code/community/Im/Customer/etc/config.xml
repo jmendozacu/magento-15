@@ -1,0 +1,22 @@
+<config>
+  <global>
+    <helpers>
+      <customer>
+        <rewrite>
+          <data>Im_Customer_Helper_Data</data>
+        </rewrite>
+      </customer>
+    </helpers>
+  </global>
+  <frontend>
+        <routers>
+            <im_customer>
+                <use>standard</use>
+                <args>
+                    <module>Im_customer</module>
+                    <frontName>testdemo</frontName>
+                </args>
+            </im_customer>
+        </routers>
+    </frontend>
+</config>

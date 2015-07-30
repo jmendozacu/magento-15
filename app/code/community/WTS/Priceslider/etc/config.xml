@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <WTS_Priceslider>
+            <version>0.1.0</version>
+        </WTS_Priceslider>
+    </modules>
+    <frontend>
+        <routers>
+            <priceslider>
+                <use>standard</use>
+                <args>
+                    <module>WTS_Priceslider</module>
+                    <frontName>priceslider</frontName>
+                </args>
+            </priceslider>
+        </routers>
+        <layout>
+            <updates>
+                <priceslider>
+                    <file>WTS_Priceslider.xml</file>
+                </priceslider>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <models>
+            <price_resource>
+                <rewrite>
+                    <price>WTS_Mage_Catalog_Model_Resource_Layer_Filter_Price</price>
+                </rewrite>
+            </price_resource>
+        </models>
+    </global>
+</config>
