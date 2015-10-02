@@ -1,0 +1,2102 @@
+2015-08-19T14:58:00+00:00 DEBUG (7): Array
+(
+    [request] => Array
+        (
+            [WebAuthenticationDetail] => Array
+                (
+                    [UserCredential] => Array
+                        (
+                            [Key] => 0mbCiCavGzBa5Txi
+                            [Password] => f5soHDSxdnx3d4cZH4Dzownp2
+                        )
+
+                )
+
+            [ClientDetail] => Array
+                (
+                    [AccountNumber] => 510087607
+                    [MeterNumber] => 118685724
+                )
+
+            [Version] => Array
+                (
+                    [ServiceId] => crs
+                    [Major] => 10
+                    [Intermediate] => 0
+                    [Minor] => 0
+                )
+
+            [RequestedShipment] => Array
+                (
+                    [DropoffType] => REGULAR_PICKUP
+                    [ShipTimestamp] => 2015-08-19T14:57:56+00:00
+                    [PackagingType] => YOUR_PACKAGING
+                    [TotalInsuredValue] => Array
+                        (
+                            [Amount] => 455
+                            [Currency] => USD
+                        )
+
+                    [Shipper] => Array
+                        (
+                            [Address] => Array
+                                (
+                                    [PostalCode] => 90034
+                                    [CountryCode] => US
+                                )
+
+                        )
+
+                    [Recipient] => Array
+                        (
+                            [Address] => Array
+                                (
+                                    [PostalCode] => 44000
+                                    [CountryCode] => PK
+                                    [Residential] => 
+                                )
+
+                        )
+
+                    [ShippingChargesPayment] => Array
+                        (
+                            [PaymentType] => SENDER
+                            [Payor] => Array
+                                (
+                                    [AccountNumber] => 510087607
+                                    [CountryCode] => US
+                                )
+
+                        )
+
+                    [CustomsClearanceDetail] => Array
+                        (
+                            [CustomsValue] => Array
+                                (
+                                    [Amount] => 455
+                                    [Currency] => USD
+                                )
+
+                        )
+
+                    [RateRequestTypes] => LIST
+                    [PackageCount] => 1
+                    [PackageDetail] => INDIVIDUAL_PACKAGES
+                    [RequestedPackageLineItems] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [Weight] => Array
+                                        (
+                                            [Value] => 1
+                                            [Units] => LB
+                                        )
+
+                                    [GroupPackageCount] => 1
+                                    [InsuredValue] => Array
+                                        (
+                                            [Amount] => 455
+                                            [Currency] => USD
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [result] => stdClass Object
+        (
+            [HighestSeverity] => WARNING
+            [Notifications] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [Severity] => WARNING
+                            [Source] => crs
+                            [Code] => 831
+                            [Message] => Service was validated at the country level, but might not be valid for the actual intended city for the destination. 
+                            [LocalizedMessage] => Service was validated at the country level, but might not be valid for the actual intended city for the destination. 
+                            [MessageParameters] => stdClass Object
+                                (
+                                    [Id] => ORIGIN_OR_DESTINATION
+                                    [Value] => destination
+                                )
+
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [Severity] => NOTE
+                            [Source] => crs
+                            [Code] => 823
+                            [Message] => The country's default routing code was used for the destination. 
+                            [LocalizedMessage] => The country's default routing code was used for the destination. 
+                            [MessageParameters] => stdClass Object
+                                (
+                                    [Id] => ORIGIN_OR_DESTINATION
+                                    [Value] => destination
+                                )
+
+                        )
+
+                )
+
+            [Version] => stdClass Object
+                (
+                    [ServiceId] => crs
+                    [Major] => 10
+                    [Intermediate] => 0
+                    [Minor] => 0
+                )
+
+            [RateReplyDetails] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [ServiceType] => INTERNATIONAL_PRIORITY
+                            [PackagingType] => YOUR_PACKAGING
+                            [DestinationAirportId] => KWI
+                            [IneligibleForMoneyBackGuarantee] => 
+                            [OriginServiceArea] => A1
+                            [DestinationServiceArea] => PM
+                            [SignatureOption] => SERVICE_DEFAULT
+                            [ActualRateType] => PAYOR_ACCOUNT_SHIPMENT
+                            [RatedShipmentDetails] => Array
+                                (
+                                    [0] => stdClass Object
+                                        (
+                                            [EffectiveNetDiscount] => stdClass Object
+                                                (
+                                                    [Currency] => USD
+                                                    [Amount] => 0.0
+                                                )
+
+                                            [ShipmentRateDetail] => stdClass Object
+                                                (
+                                                    [RateType] => PAYOR_ACCOUNT_SHIPMENT
+                                                    [RateScale] => 0000000
+                                                    [RateZone] => US001O
+                                                    [PricingCode] => ACTUAL
+                                                    [RatedWeightMethod] => ACTUAL
+                                                    [CurrencyExchangeRate] => stdClass Object
+                                                        (
+                                                            [FromCurrency] => USD
+                                                            [IntoCurrency] => USD
+                                                            [Rate] => 1.0
+                                                        )
+
+                                                    [DimDivisor] => 0
+                                                    [FuelSurchargePercent] => 3.0
+                                                    [TotalBillingWeight] => stdClass Object
+                                                        (
+                                                            [Units] => LB
+                                                            [Value] => 1.0
+                                                        )
+
+                                                    [TotalBaseCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 94.63
+                                                        )
+
+                                                    [TotalFreightDiscounts] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetFreight] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 94.63
+                                                        )
+
+                                                    [TotalSurcharges] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 6.64
+                                                        )
+
+                                                    [TotalNetFedExCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 101.27
+                                                        )
+
+                                                    [TotalTaxes] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 101.27
+                                                        )
+
+                                                    [TotalRebates] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [Surcharges] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => INSURED_VALUE
+                                                                    [Description] => Insured value
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 3.8
+                                                                        )
+
+                                                                )
+
+                                                            [1] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => FUEL
+                                                                    [Description] => Fuel
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 2.84
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => stdClass Object
+                                        (
+                                            [EffectiveNetDiscount] => stdClass Object
+                                                (
+                                                    [Currency] => USD
+                                                    [Amount] => 0.0
+                                                )
+
+                                            [ShipmentRateDetail] => stdClass Object
+                                                (
+                                                    [RateType] => RATED_ACCOUNT_SHIPMENT
+                                                    [RateScale] => 0000000
+                                                    [RateZone] => US001O
+                                                    [PricingCode] => ACTUAL
+                                                    [RatedWeightMethod] => ACTUAL
+                                                    [CurrencyExchangeRate] => stdClass Object
+                                                        (
+                                                            [FromCurrency] => USD
+                                                            [IntoCurrency] => USD
+                                                            [Rate] => 1.0
+                                                        )
+
+                                                    [DimDivisor] => 0
+                                                    [FuelSurchargePercent] => 3.0
+                                                    [TotalBillingWeight] => stdClass Object
+                                                        (
+                                                            [Units] => LB
+                                                            [Value] => 1.0
+                                                        )
+
+                                                    [TotalBaseCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 94.63
+                                                        )
+
+                                                    [TotalFreightDiscounts] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetFreight] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 94.63
+                                                        )
+
+                                                    [TotalSurcharges] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 6.64
+                                                        )
+
+                                                    [TotalNetFedExCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 101.27
+                                                        )
+
+                                                    [TotalTaxes] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 101.27
+                                                        )
+
+                                                    [TotalRebates] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [Surcharges] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => INSURED_VALUE
+                                                                    [Description] => Insured value
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 3.8
+                                                                        )
+
+                                                                )
+
+                                                            [1] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => FUEL
+                                                                    [Description] => Fuel
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 2.84
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [2] => stdClass Object
+                                        (
+                                            [ShipmentRateDetail] => stdClass Object
+                                                (
+                                                    [RateType] => PAYOR_LIST_SHIPMENT
+                                                    [RateScale] => 0000000
+                                                    [RateZone] => US001O
+                                                    [PricingCode] => ACTUAL
+                                                    [RatedWeightMethod] => ACTUAL
+                                                    [CurrencyExchangeRate] => stdClass Object
+                                                        (
+                                                            [FromCurrency] => USD
+                                                            [IntoCurrency] => USD
+                                                            [Rate] => 1.0
+                                                        )
+
+                                                    [DimDivisor] => 0
+                                                    [FuelSurchargePercent] => 3.0
+                                                    [TotalBillingWeight] => stdClass Object
+                                                        (
+                                                            [Units] => LB
+                                                            [Value] => 1.0
+                                                        )
+
+                                                    [TotalBaseCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 94.63
+                                                        )
+
+                                                    [TotalFreightDiscounts] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetFreight] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 94.63
+                                                        )
+
+                                                    [TotalSurcharges] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 6.64
+                                                        )
+
+                                                    [TotalNetFedExCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 101.27
+                                                        )
+
+                                                    [TotalTaxes] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 101.27
+                                                        )
+
+                                                    [TotalRebates] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [Surcharges] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => INSURED_VALUE
+                                                                    [Description] => Insured value
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 3.8
+                                                                        )
+
+                                                                )
+
+                                                            [1] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => FUEL
+                                                                    [Description] => Fuel
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 2.84
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [3] => stdClass Object
+                                        (
+                                            [ShipmentRateDetail] => stdClass Object
+                                                (
+                                                    [RateType] => RATED_LIST_SHIPMENT
+                                                    [RateScale] => 0000000
+                                                    [RateZone] => US001O
+                                                    [PricingCode] => ACTUAL
+                                                    [RatedWeightMethod] => ACTUAL
+                                                    [CurrencyExchangeRate] => stdClass Object
+                                                        (
+                                                            [FromCurrency] => USD
+                                                            [IntoCurrency] => USD
+                                                            [Rate] => 1.0
+                                                        )
+
+                                                    [DimDivisor] => 0
+                                                    [FuelSurchargePercent] => 3.0
+                                                    [TotalBillingWeight] => stdClass Object
+                                                        (
+                                                            [Units] => LB
+                                                            [Value] => 1.0
+                                                        )
+
+                                                    [TotalBaseCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 94.63
+                                                        )
+
+                                                    [TotalFreightDiscounts] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetFreight] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 94.63
+                                                        )
+
+                                                    [TotalSurcharges] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 6.64
+                                                        )
+
+                                                    [TotalNetFedExCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 101.27
+                                                        )
+
+                                                    [TotalTaxes] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 101.27
+                                                        )
+
+                                                    [TotalRebates] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [Surcharges] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => INSURED_VALUE
+                                                                    [Description] => Insured value
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 3.8
+                                                                        )
+
+                                                                )
+
+                                                            [1] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => FUEL
+                                                                    [Description] => Fuel
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 2.84
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [ServiceType] => INTERNATIONAL_ECONOMY
+                            [PackagingType] => YOUR_PACKAGING
+                            [DestinationAirportId] => KWI
+                            [IneligibleForMoneyBackGuarantee] => 
+                            [OriginServiceArea] => A1
+                            [DestinationServiceArea] => PM
+                            [SignatureOption] => SERVICE_DEFAULT
+                            [ActualRateType] => PAYOR_ACCOUNT_SHIPMENT
+                            [RatedShipmentDetails] => Array
+                                (
+                                    [0] => stdClass Object
+                                        (
+                                            [EffectiveNetDiscount] => stdClass Object
+                                                (
+                                                    [Currency] => USD
+                                                    [Amount] => 0.0
+                                                )
+
+                                            [ShipmentRateDetail] => stdClass Object
+                                                (
+                                                    [RateType] => PAYOR_ACCOUNT_SHIPMENT
+                                                    [RateScale] => 0000000
+                                                    [RateZone] => US001O
+                                                    [PricingCode] => ACTUAL
+                                                    [RatedWeightMethod] => ACTUAL
+                                                    [CurrencyExchangeRate] => stdClass Object
+                                                        (
+                                                            [FromCurrency] => USD
+                                                            [IntoCurrency] => USD
+                                                            [Rate] => 1.0
+                                                        )
+
+                                                    [DimDivisor] => 0
+                                                    [FuelSurchargePercent] => 3.0
+                                                    [TotalBillingWeight] => stdClass Object
+                                                        (
+                                                            [Units] => LB
+                                                            [Value] => 1.0
+                                                        )
+
+                                                    [TotalBaseCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 90.67
+                                                        )
+
+                                                    [TotalFreightDiscounts] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetFreight] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 90.67
+                                                        )
+
+                                                    [TotalSurcharges] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 6.52
+                                                        )
+
+                                                    [TotalNetFedExCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 97.19
+                                                        )
+
+                                                    [TotalTaxes] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 97.19
+                                                        )
+
+                                                    [TotalRebates] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [Surcharges] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => INSURED_VALUE
+                                                                    [Description] => Insured value
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 3.8
+                                                                        )
+
+                                                                )
+
+                                                            [1] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => FUEL
+                                                                    [Description] => Fuel
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 2.72
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => stdClass Object
+                                        (
+                                            [EffectiveNetDiscount] => stdClass Object
+                                                (
+                                                    [Currency] => USD
+                                                    [Amount] => 0.0
+                                                )
+
+                                            [ShipmentRateDetail] => stdClass Object
+                                                (
+                                                    [RateType] => RATED_ACCOUNT_SHIPMENT
+                                                    [RateScale] => 0000000
+                                                    [RateZone] => US001O
+                                                    [PricingCode] => ACTUAL
+                                                    [RatedWeightMethod] => ACTUAL
+                                                    [CurrencyExchangeRate] => stdClass Object
+                                                        (
+                                                            [FromCurrency] => USD
+                                                            [IntoCurrency] => USD
+                                                            [Rate] => 1.0
+                                                        )
+
+                                                    [DimDivisor] => 0
+                                                    [FuelSurchargePercent] => 3.0
+                                                    [TotalBillingWeight] => stdClass Object
+                                                        (
+                                                            [Units] => LB
+                                                            [Value] => 1.0
+                                                        )
+
+                                                    [TotalBaseCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 90.67
+                                                        )
+
+                                                    [TotalFreightDiscounts] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetFreight] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 90.67
+                                                        )
+
+                                                    [TotalSurcharges] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 6.52
+                                                        )
+
+                                                    [TotalNetFedExCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 97.19
+                                                        )
+
+                                                    [TotalTaxes] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 97.19
+                                                        )
+
+                                                    [TotalRebates] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [Surcharges] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => INSURED_VALUE
+                                                                    [Description] => Insured value
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 3.8
+                                                                        )
+
+                                                                )
+
+                                                            [1] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => FUEL
+                                                                    [Description] => Fuel
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 2.72
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [2] => stdClass Object
+                                        (
+                                            [ShipmentRateDetail] => stdClass Object
+                                                (
+                                                    [RateType] => PAYOR_LIST_SHIPMENT
+                                                    [RateScale] => 0000000
+                                                    [RateZone] => US001O
+                                                    [PricingCode] => ACTUAL
+                                                    [RatedWeightMethod] => ACTUAL
+                                                    [CurrencyExchangeRate] => stdClass Object
+                                                        (
+                                                            [FromCurrency] => USD
+                                                            [IntoCurrency] => USD
+                                                            [Rate] => 1.0
+                                                        )
+
+                                                    [DimDivisor] => 0
+                                                    [FuelSurchargePercent] => 3.0
+                                                    [TotalBillingWeight] => stdClass Object
+                                                        (
+                                                            [Units] => LB
+                                                            [Value] => 1.0
+                                                        )
+
+                                                    [TotalBaseCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 90.67
+                                                        )
+
+                                                    [TotalFreightDiscounts] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetFreight] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 90.67
+                                                        )
+
+                                                    [TotalSurcharges] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 6.52
+                                                        )
+
+                                                    [TotalNetFedExCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 97.19
+                                                        )
+
+                                                    [TotalTaxes] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 97.19
+                                                        )
+
+                                                    [TotalRebates] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [Surcharges] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => INSURED_VALUE
+                                                                    [Description] => Insured value
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 3.8
+                                                                        )
+
+                                                                )
+
+                                                            [1] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => FUEL
+                                                                    [Description] => Fuel
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 2.72
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [3] => stdClass Object
+                                        (
+                                            [ShipmentRateDetail] => stdClass Object
+                                                (
+                                                    [RateType] => RATED_LIST_SHIPMENT
+                                                    [RateScale] => 0000000
+                                                    [RateZone] => US001O
+                                                    [PricingCode] => ACTUAL
+                                                    [RatedWeightMethod] => ACTUAL
+                                                    [CurrencyExchangeRate] => stdClass Object
+                                                        (
+                                                            [FromCurrency] => USD
+                                                            [IntoCurrency] => USD
+                                                            [Rate] => 1.0
+                                                        )
+
+                                                    [DimDivisor] => 0
+                                                    [FuelSurchargePercent] => 3.0
+                                                    [TotalBillingWeight] => stdClass Object
+                                                        (
+                                                            [Units] => LB
+                                                            [Value] => 1.0
+                                                        )
+
+                                                    [TotalBaseCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 90.67
+                                                        )
+
+                                                    [TotalFreightDiscounts] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetFreight] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 90.67
+                                                        )
+
+                                                    [TotalSurcharges] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 6.52
+                                                        )
+
+                                                    [TotalNetFedExCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 97.19
+                                                        )
+
+                                                    [TotalTaxes] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 97.19
+                                                        )
+
+                                                    [TotalRebates] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [Surcharges] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => INSURED_VALUE
+                                                                    [Description] => Insured value
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 3.8
+                                                                        )
+
+                                                                )
+
+                                                            [1] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => FUEL
+                                                                    [Description] => Fuel
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 2.72
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [__pid] => 23455
+)
+
+2015-08-19T14:58:08+00:00 DEBUG (7): Array
+(
+    [request] => Array
+        (
+            [WebAuthenticationDetail] => Array
+                (
+                    [UserCredential] => Array
+                        (
+                            [Key] => 0mbCiCavGzBa5Txi
+                            [Password] => f5soHDSxdnx3d4cZH4Dzownp2
+                        )
+
+                )
+
+            [ClientDetail] => Array
+                (
+                    [AccountNumber] => 510087607
+                    [MeterNumber] => 118685724
+                )
+
+            [Version] => Array
+                (
+                    [ServiceId] => crs
+                    [Major] => 10
+                    [Intermediate] => 0
+                    [Minor] => 0
+                )
+
+            [RequestedShipment] => Array
+                (
+                    [DropoffType] => REGULAR_PICKUP
+                    [ShipTimestamp] => 2015-08-19T14:58:05+00:00
+                    [PackagingType] => YOUR_PACKAGING
+                    [TotalInsuredValue] => Array
+                        (
+                            [Amount] => 455
+                            [Currency] => USD
+                        )
+
+                    [Shipper] => Array
+                        (
+                            [Address] => Array
+                                (
+                                    [PostalCode] => 90034
+                                    [CountryCode] => US
+                                )
+
+                        )
+
+                    [Recipient] => Array
+                        (
+                            [Address] => Array
+                                (
+                                    [PostalCode] => 44000
+                                    [CountryCode] => PK
+                                    [Residential] => 
+                                )
+
+                        )
+
+                    [ShippingChargesPayment] => Array
+                        (
+                            [PaymentType] => SENDER
+                            [Payor] => Array
+                                (
+                                    [AccountNumber] => 510087607
+                                    [CountryCode] => US
+                                )
+
+                        )
+
+                    [CustomsClearanceDetail] => Array
+                        (
+                            [CustomsValue] => Array
+                                (
+                                    [Amount] => 455
+                                    [Currency] => USD
+                                )
+
+                        )
+
+                    [RateRequestTypes] => LIST
+                    [PackageCount] => 1
+                    [PackageDetail] => INDIVIDUAL_PACKAGES
+                    [RequestedPackageLineItems] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [Weight] => Array
+                                        (
+                                            [Value] => 1
+                                            [Units] => LB
+                                        )
+
+                                    [GroupPackageCount] => 1
+                                    [InsuredValue] => Array
+                                        (
+                                            [Amount] => 455
+                                            [Currency] => USD
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [result] => stdClass Object
+        (
+            [HighestSeverity] => WARNING
+            [Notifications] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [Severity] => WARNING
+                            [Source] => crs
+                            [Code] => 831
+                            [Message] => Service was validated at the country level, but might not be valid for the actual intended city for the destination. 
+                            [LocalizedMessage] => Service was validated at the country level, but might not be valid for the actual intended city for the destination. 
+                            [MessageParameters] => stdClass Object
+                                (
+                                    [Id] => ORIGIN_OR_DESTINATION
+                                    [Value] => destination
+                                )
+
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [Severity] => NOTE
+                            [Source] => crs
+                            [Code] => 823
+                            [Message] => The country's default routing code was used for the destination. 
+                            [LocalizedMessage] => The country's default routing code was used for the destination. 
+                            [MessageParameters] => stdClass Object
+                                (
+                                    [Id] => ORIGIN_OR_DESTINATION
+                                    [Value] => destination
+                                )
+
+                        )
+
+                )
+
+            [Version] => stdClass Object
+                (
+                    [ServiceId] => crs
+                    [Major] => 10
+                    [Intermediate] => 0
+                    [Minor] => 0
+                )
+
+            [RateReplyDetails] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [ServiceType] => INTERNATIONAL_PRIORITY
+                            [PackagingType] => YOUR_PACKAGING
+                            [DestinationAirportId] => KWI
+                            [IneligibleForMoneyBackGuarantee] => 
+                            [OriginServiceArea] => A1
+                            [DestinationServiceArea] => PM
+                            [SignatureOption] => SERVICE_DEFAULT
+                            [ActualRateType] => PAYOR_ACCOUNT_SHIPMENT
+                            [RatedShipmentDetails] => Array
+                                (
+                                    [0] => stdClass Object
+                                        (
+                                            [EffectiveNetDiscount] => stdClass Object
+                                                (
+                                                    [Currency] => USD
+                                                    [Amount] => 0.0
+                                                )
+
+                                            [ShipmentRateDetail] => stdClass Object
+                                                (
+                                                    [RateType] => PAYOR_ACCOUNT_SHIPMENT
+                                                    [RateScale] => 0000000
+                                                    [RateZone] => US001O
+                                                    [PricingCode] => ACTUAL
+                                                    [RatedWeightMethod] => ACTUAL
+                                                    [CurrencyExchangeRate] => stdClass Object
+                                                        (
+                                                            [FromCurrency] => USD
+                                                            [IntoCurrency] => USD
+                                                            [Rate] => 1.0
+                                                        )
+
+                                                    [DimDivisor] => 0
+                                                    [FuelSurchargePercent] => 3.0
+                                                    [TotalBillingWeight] => stdClass Object
+                                                        (
+                                                            [Units] => LB
+                                                            [Value] => 1.0
+                                                        )
+
+                                                    [TotalBaseCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 94.63
+                                                        )
+
+                                                    [TotalFreightDiscounts] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetFreight] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 94.63
+                                                        )
+
+                                                    [TotalSurcharges] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 6.64
+                                                        )
+
+                                                    [TotalNetFedExCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 101.27
+                                                        )
+
+                                                    [TotalTaxes] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 101.27
+                                                        )
+
+                                                    [TotalRebates] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [Surcharges] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => INSURED_VALUE
+                                                                    [Description] => Insured value
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 3.8
+                                                                        )
+
+                                                                )
+
+                                                            [1] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => FUEL
+                                                                    [Description] => Fuel
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 2.84
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => stdClass Object
+                                        (
+                                            [EffectiveNetDiscount] => stdClass Object
+                                                (
+                                                    [Currency] => USD
+                                                    [Amount] => 0.0
+                                                )
+
+                                            [ShipmentRateDetail] => stdClass Object
+                                                (
+                                                    [RateType] => RATED_ACCOUNT_SHIPMENT
+                                                    [RateScale] => 0000000
+                                                    [RateZone] => US001O
+                                                    [PricingCode] => ACTUAL
+                                                    [RatedWeightMethod] => ACTUAL
+                                                    [CurrencyExchangeRate] => stdClass Object
+                                                        (
+                                                            [FromCurrency] => USD
+                                                            [IntoCurrency] => USD
+                                                            [Rate] => 1.0
+                                                        )
+
+                                                    [DimDivisor] => 0
+                                                    [FuelSurchargePercent] => 3.0
+                                                    [TotalBillingWeight] => stdClass Object
+                                                        (
+                                                            [Units] => LB
+                                                            [Value] => 1.0
+                                                        )
+
+                                                    [TotalBaseCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 94.63
+                                                        )
+
+                                                    [TotalFreightDiscounts] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetFreight] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 94.63
+                                                        )
+
+                                                    [TotalSurcharges] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 6.64
+                                                        )
+
+                                                    [TotalNetFedExCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 101.27
+                                                        )
+
+                                                    [TotalTaxes] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 101.27
+                                                        )
+
+                                                    [TotalRebates] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [Surcharges] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => INSURED_VALUE
+                                                                    [Description] => Insured value
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 3.8
+                                                                        )
+
+                                                                )
+
+                                                            [1] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => FUEL
+                                                                    [Description] => Fuel
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 2.84
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [2] => stdClass Object
+                                        (
+                                            [ShipmentRateDetail] => stdClass Object
+                                                (
+                                                    [RateType] => PAYOR_LIST_SHIPMENT
+                                                    [RateScale] => 0000000
+                                                    [RateZone] => US001O
+                                                    [PricingCode] => ACTUAL
+                                                    [RatedWeightMethod] => ACTUAL
+                                                    [CurrencyExchangeRate] => stdClass Object
+                                                        (
+                                                            [FromCurrency] => USD
+                                                            [IntoCurrency] => USD
+                                                            [Rate] => 1.0
+                                                        )
+
+                                                    [DimDivisor] => 0
+                                                    [FuelSurchargePercent] => 3.0
+                                                    [TotalBillingWeight] => stdClass Object
+                                                        (
+                                                            [Units] => LB
+                                                            [Value] => 1.0
+                                                        )
+
+                                                    [TotalBaseCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 94.63
+                                                        )
+
+                                                    [TotalFreightDiscounts] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetFreight] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 94.63
+                                                        )
+
+                                                    [TotalSurcharges] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 6.64
+                                                        )
+
+                                                    [TotalNetFedExCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 101.27
+                                                        )
+
+                                                    [TotalTaxes] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 101.27
+                                                        )
+
+                                                    [TotalRebates] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [Surcharges] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => INSURED_VALUE
+                                                                    [Description] => Insured value
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 3.8
+                                                                        )
+
+                                                                )
+
+                                                            [1] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => FUEL
+                                                                    [Description] => Fuel
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 2.84
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [3] => stdClass Object
+                                        (
+                                            [ShipmentRateDetail] => stdClass Object
+                                                (
+                                                    [RateType] => RATED_LIST_SHIPMENT
+                                                    [RateScale] => 0000000
+                                                    [RateZone] => US001O
+                                                    [PricingCode] => ACTUAL
+                                                    [RatedWeightMethod] => ACTUAL
+                                                    [CurrencyExchangeRate] => stdClass Object
+                                                        (
+                                                            [FromCurrency] => USD
+                                                            [IntoCurrency] => USD
+                                                            [Rate] => 1.0
+                                                        )
+
+                                                    [DimDivisor] => 0
+                                                    [FuelSurchargePercent] => 3.0
+                                                    [TotalBillingWeight] => stdClass Object
+                                                        (
+                                                            [Units] => LB
+                                                            [Value] => 1.0
+                                                        )
+
+                                                    [TotalBaseCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 94.63
+                                                        )
+
+                                                    [TotalFreightDiscounts] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetFreight] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 94.63
+                                                        )
+
+                                                    [TotalSurcharges] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 6.64
+                                                        )
+
+                                                    [TotalNetFedExCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 101.27
+                                                        )
+
+                                                    [TotalTaxes] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 101.27
+                                                        )
+
+                                                    [TotalRebates] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [Surcharges] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => INSURED_VALUE
+                                                                    [Description] => Insured value
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 3.8
+                                                                        )
+
+                                                                )
+
+                                                            [1] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => FUEL
+                                                                    [Description] => Fuel
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 2.84
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [ServiceType] => INTERNATIONAL_ECONOMY
+                            [PackagingType] => YOUR_PACKAGING
+                            [DestinationAirportId] => KWI
+                            [IneligibleForMoneyBackGuarantee] => 
+                            [OriginServiceArea] => A1
+                            [DestinationServiceArea] => PM
+                            [SignatureOption] => SERVICE_DEFAULT
+                            [ActualRateType] => PAYOR_ACCOUNT_SHIPMENT
+                            [RatedShipmentDetails] => Array
+                                (
+                                    [0] => stdClass Object
+                                        (
+                                            [EffectiveNetDiscount] => stdClass Object
+                                                (
+                                                    [Currency] => USD
+                                                    [Amount] => 0.0
+                                                )
+
+                                            [ShipmentRateDetail] => stdClass Object
+                                                (
+                                                    [RateType] => PAYOR_ACCOUNT_SHIPMENT
+                                                    [RateScale] => 0000000
+                                                    [RateZone] => US001O
+                                                    [PricingCode] => ACTUAL
+                                                    [RatedWeightMethod] => ACTUAL
+                                                    [CurrencyExchangeRate] => stdClass Object
+                                                        (
+                                                            [FromCurrency] => USD
+                                                            [IntoCurrency] => USD
+                                                            [Rate] => 1.0
+                                                        )
+
+                                                    [DimDivisor] => 0
+                                                    [FuelSurchargePercent] => 3.0
+                                                    [TotalBillingWeight] => stdClass Object
+                                                        (
+                                                            [Units] => LB
+                                                            [Value] => 1.0
+                                                        )
+
+                                                    [TotalBaseCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 90.67
+                                                        )
+
+                                                    [TotalFreightDiscounts] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetFreight] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 90.67
+                                                        )
+
+                                                    [TotalSurcharges] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 6.52
+                                                        )
+
+                                                    [TotalNetFedExCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 97.19
+                                                        )
+
+                                                    [TotalTaxes] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 97.19
+                                                        )
+
+                                                    [TotalRebates] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [Surcharges] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => INSURED_VALUE
+                                                                    [Description] => Insured value
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 3.8
+                                                                        )
+
+                                                                )
+
+                                                            [1] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => FUEL
+                                                                    [Description] => Fuel
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 2.72
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => stdClass Object
+                                        (
+                                            [EffectiveNetDiscount] => stdClass Object
+                                                (
+                                                    [Currency] => USD
+                                                    [Amount] => 0.0
+                                                )
+
+                                            [ShipmentRateDetail] => stdClass Object
+                                                (
+                                                    [RateType] => RATED_ACCOUNT_SHIPMENT
+                                                    [RateScale] => 0000000
+                                                    [RateZone] => US001O
+                                                    [PricingCode] => ACTUAL
+                                                    [RatedWeightMethod] => ACTUAL
+                                                    [CurrencyExchangeRate] => stdClass Object
+                                                        (
+                                                            [FromCurrency] => USD
+                                                            [IntoCurrency] => USD
+                                                            [Rate] => 1.0
+                                                        )
+
+                                                    [DimDivisor] => 0
+                                                    [FuelSurchargePercent] => 3.0
+                                                    [TotalBillingWeight] => stdClass Object
+                                                        (
+                                                            [Units] => LB
+                                                            [Value] => 1.0
+                                                        )
+
+                                                    [TotalBaseCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 90.67
+                                                        )
+
+                                                    [TotalFreightDiscounts] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetFreight] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 90.67
+                                                        )
+
+                                                    [TotalSurcharges] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 6.52
+                                                        )
+
+                                                    [TotalNetFedExCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 97.19
+                                                        )
+
+                                                    [TotalTaxes] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 97.19
+                                                        )
+
+                                                    [TotalRebates] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [Surcharges] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => INSURED_VALUE
+                                                                    [Description] => Insured value
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 3.8
+                                                                        )
+
+                                                                )
+
+                                                            [1] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => FUEL
+                                                                    [Description] => Fuel
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 2.72
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [2] => stdClass Object
+                                        (
+                                            [ShipmentRateDetail] => stdClass Object
+                                                (
+                                                    [RateType] => PAYOR_LIST_SHIPMENT
+                                                    [RateScale] => 0000000
+                                                    [RateZone] => US001O
+                                                    [PricingCode] => ACTUAL
+                                                    [RatedWeightMethod] => ACTUAL
+                                                    [CurrencyExchangeRate] => stdClass Object
+                                                        (
+                                                            [FromCurrency] => USD
+                                                            [IntoCurrency] => USD
+                                                            [Rate] => 1.0
+                                                        )
+
+                                                    [DimDivisor] => 0
+                                                    [FuelSurchargePercent] => 3.0
+                                                    [TotalBillingWeight] => stdClass Object
+                                                        (
+                                                            [Units] => LB
+                                                            [Value] => 1.0
+                                                        )
+
+                                                    [TotalBaseCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 90.67
+                                                        )
+
+                                                    [TotalFreightDiscounts] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetFreight] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 90.67
+                                                        )
+
+                                                    [TotalSurcharges] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 6.52
+                                                        )
+
+                                                    [TotalNetFedExCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 97.19
+                                                        )
+
+                                                    [TotalTaxes] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 97.19
+                                                        )
+
+                                                    [TotalRebates] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [Surcharges] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => INSURED_VALUE
+                                                                    [Description] => Insured value
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 3.8
+                                                                        )
+
+                                                                )
+
+                                                            [1] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => FUEL
+                                                                    [Description] => Fuel
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 2.72
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [3] => stdClass Object
+                                        (
+                                            [ShipmentRateDetail] => stdClass Object
+                                                (
+                                                    [RateType] => RATED_LIST_SHIPMENT
+                                                    [RateScale] => 0000000
+                                                    [RateZone] => US001O
+                                                    [PricingCode] => ACTUAL
+                                                    [RatedWeightMethod] => ACTUAL
+                                                    [CurrencyExchangeRate] => stdClass Object
+                                                        (
+                                                            [FromCurrency] => USD
+                                                            [IntoCurrency] => USD
+                                                            [Rate] => 1.0
+                                                        )
+
+                                                    [DimDivisor] => 0
+                                                    [FuelSurchargePercent] => 3.0
+                                                    [TotalBillingWeight] => stdClass Object
+                                                        (
+                                                            [Units] => LB
+                                                            [Value] => 1.0
+                                                        )
+
+                                                    [TotalBaseCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 90.67
+                                                        )
+
+                                                    [TotalFreightDiscounts] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetFreight] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 90.67
+                                                        )
+
+                                                    [TotalSurcharges] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 6.52
+                                                        )
+
+                                                    [TotalNetFedExCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 97.19
+                                                        )
+
+                                                    [TotalTaxes] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [TotalNetCharge] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 97.19
+                                                        )
+
+                                                    [TotalRebates] => stdClass Object
+                                                        (
+                                                            [Currency] => USD
+                                                            [Amount] => 0.0
+                                                        )
+
+                                                    [Surcharges] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => INSURED_VALUE
+                                                                    [Description] => Insured value
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 3.8
+                                                                        )
+
+                                                                )
+
+                                                            [1] => stdClass Object
+                                                                (
+                                                                    [SurchargeType] => FUEL
+                                                                    [Description] => Fuel
+                                                                    [Amount] => stdClass Object
+                                                                        (
+                                                                            [Currency] => USD
+                                                                            [Amount] => 2.72
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [__pid] => 23455
+)
+
