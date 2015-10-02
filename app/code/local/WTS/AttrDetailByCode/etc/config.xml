@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <WTS_AttrDetailByCode>
+            <version>0.1.0</version>
+        </WTS_AttrDetailByCode>
+    </modules>
+    <blocks>
+        <wts_attrdetailbycode>
+            <class>WTS_AttrDetailByCode_Block</class>
+        </wts_attrdetailbycode>
+    </blocks>
+    <helpers>
+        <wts_attrdetailbycode>
+            <class>WTS_AttrDetailByCode_Helper</class>
+        </wts_attrdetailbycode>
+    </helpers>
+    <frontend>
+        <routers>
+            <wts_attrdetailbycode>
+                <use>standard</use>
+                <args>
+                    <module>WTS_AttrDetailByCode</module>
+                    <frontName>wts_attrdetailbycode</frontName>
+                </args>
+            </wts_attrdetailbycode>
+        </routers>
+        <layout>
+            <updates>
+                <wts_attrdetailbycode>
+                    <file>wts_attrdetailbycode.xml</file>
+                </wts_attrdetailbycode>
+            </updates>
+        </layout>
+    </frontend>
+</config>
